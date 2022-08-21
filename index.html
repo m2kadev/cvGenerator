@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/51aa187827.js" crossorigin="anonymous"></script>
+    <title>Rotating Navigation</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="circle-container">
+            <div class="circle">
+                <button id="close">
+                    <i class="fas fa-times"></i>
+                </button>
+                <button id="open">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content-container">
+                <div class="form-controls">
+                    <input type="text" id="name">
+                    <span class="label">Name</span>
+                    <p class="alert name">you must fill this field</p>
+                </div>
+                <div class="form-controls">
+                    <input type="text" id="education">
+                    <span class="label">Education</span>
+                    <p class="alert education">you must fill this field</p>
+                </div>
+                <div class="form-controls">
+                    <input type="text" id="address">
+                    <span class="label">Address</span>
+                    <p class="alert address">you must fill this field</p>
+                </div>
+                <div class="form-controls">
+                    <input type="text" id="experiences">
+                    <span class="label">Experiences</span>
+                    <p class="alert experiences">you must fill this field</p>
+                </div>
+                <div class="form-controls">
+                    <input type="text" id="skills">
+                    <span class="label">Skills</span>
+                    <p class="alert skills">you must fill this field</p>
+                </div>
+
+                <div class="btn-box">
+                    <button id="submitBtn" class="btn">Submit</button>
+                </div>
+
+                <div class="success">
+                    <a href="cv.html" data-success>Your informations have been added to CV. Click here to see -></a>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <nav>
+    
+        <ul>
+            <li><i class="fas fa-home"></i> Home</li>
+            <li><i class="fas fa-user-alt"></i> <a href="cv.html" style="color: #fff;">CV Lists</a></li>
+            <li><i class="fas fa-envelope"></i> Contact</li>
+        </ul>
+    
+    </nav>
+
+    
+
+    <script src="script.js" type="module"></script>
+</body>
+</html>
