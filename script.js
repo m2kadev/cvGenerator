@@ -8,9 +8,7 @@ const experiences = document.getElementById('experiences')
 const skills = document.getElementById('skills')
 const submitBtn = document.getElementById('submitBtn')
 const success = document.querySelector('[data-success]')
-//console.log(success.classList)
-const cvDatas = []
-
+let cvDatas = []
 
 open.addEventListener('click', () => container.classList.add('show-nav'))
 
@@ -82,7 +80,6 @@ function addToCv() {
         return
     } else {
         cvDatas.push(datas)
-        localStorage.setItem('cvDatas', JSON.stringify(cvDatas))
         success.classList.add('show-success')
         name.value = ''
         education.value = ''
@@ -90,12 +87,13 @@ function addToCv() {
         experiences.value = ''
         skills.value = ''
     }
-    
-    //console.log(JSON.stringify(cvDatas))
+    localStorage.setItem('cvDatas', JSON.stringify(cvDatas))
 }
 
+cvDatas = JSON.parse(localStorage.getItem('cvDatas'))
 
-//console.log(JSON.parse(cvDatasFromStorage))
+localStorage.setItem('cvDatas', JSON.stringify(cvDatas))
+
 
 function validate(x) {
     if (x.value === '') {
@@ -104,3 +102,5 @@ function validate(x) {
     let namePattern = /^[a-zA-Z0-9!@#$&()-`.+,/\s\"]{2,30}$/
     return namePattern.test(x.value)
 }
+
+

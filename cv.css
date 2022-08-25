@@ -40,6 +40,7 @@ body {
     background-color: #fff;
     font-style: italic;
     border-radius: .2rem;
+    position: relative;
 }
 
 .cv-info ul li {
@@ -47,5 +48,18 @@ body {
     font-size: 1.3rem;
     padding-left: 1rem;
     border-left: 3px solid #D75281;
+}
+
+.edit-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: .3rem 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: .2rem;
 }
 
